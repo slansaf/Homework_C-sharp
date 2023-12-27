@@ -1,5 +1,5 @@
-﻿int x = 0;
-int y = 0;
+﻿int x = 3;
+int y = -8;
 
 if(x > 0 && y > 0) {
 	Console.WriteLine($"Точка с координатами x = {x} и y = {y} пренадлежит I четверти");

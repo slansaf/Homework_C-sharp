@@ -1,9 +1,9 @@
-﻿int number = 98;
+﻿int number = 10;
 
 if ( number >= 10 && number < 100){
 	int firstNumber = number / 10;
 	int secondNumber = number % 10;
-	if (firstNumber > secondNumber % 10){
+	if (firstNumber > secondNumber){
 		Console.WriteLine($"Наибольшая цифра числа {firstNumber}");
 	}
 	else {
