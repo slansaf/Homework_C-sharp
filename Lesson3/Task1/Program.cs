@@ -27,20 +27,12 @@ namespace project
 
 			int[] array = new int[kount];
 
-			for (int i = 0; i < array.Length; i++)
+			for (int i = array.Length-1; i >= 0; i--)
 			{
 				array[i] = num % 10;
 				num/=10;
 			}
-			int box = 0;
-			int N = array.Length;
-			for (int i = 0; i < N / 2 ; i++)
-			{
-				box = array[i];
-				array[i] = array[N-1-i];
-				array[N-1-i] = box;
-			}
-
+			
 			foreach (int element in array)
 			{
 				Console.Write($"{element} ");
