@@ -1,4 +1,4 @@
-﻿/******************************************************************************
+/******************************************************************************
 Задача 1: Напишите программу, которая бесконечно запрашивает целые 
 числа с консоли. Программа завершается при вводе символа ‘q’ 
 или при вводе числа, сумма цифр которого чётная.
@@ -9,15 +9,22 @@ class Program
 {
 	static void Main()
 	{
+        Console.Clear();
 		string symbol;
 		while (true)
 		{
 			symbol = EnterSymbol();
 			bool isNum = int.TryParse(symbol, out int num);
-			if (symbol == "q")
+			if (symbol == "q"){
 				break;
-			else if (CheckSymbolForDivision(num) == 0)
+            }
+            else if(num == 0){
+                continue;
+            }
+            
+			else if (CheckSymbolForDivision(num) == 0){
 				break;
+            }
 			else if (CheckSymbolForDivision(num) == 1)
 				continue;
 			else if (isNum == false)
@@ -30,7 +37,7 @@ class Program
 	static string EnterSymbol()
 	{
 		System.Console.Write("Введите число или \"q\": ");
-		string str = Console.ReadLine();
+		string str = Console.ReadLine()!;
 		return str;
 	}
 
@@ -46,4 +53,3 @@ class Program
 	}
 
 }
-
