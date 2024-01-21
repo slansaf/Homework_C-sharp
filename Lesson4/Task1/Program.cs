@@ -9,27 +9,22 @@ class Program
 {
 	static void Main()
 	{
-        Console.Clear();
+		Console.Clear();
 		string symbol;
 		while (true)
 		{
 			symbol = EnterSymbol();
 			bool isNum = int.TryParse(symbol, out int num);
-			if (symbol == "q"){
+			if (symbol == "q")
 				break;
-            }
-            else if(num == 0){
-                continue;
-            }
-            
-			else if (CheckSymbolForDivision(num) == 0){
+            		else if(num == 0)
+                		continue;
+			else if (CheckSymbolForDivision(num) == 0)
 				break;
-            }
 			else if (CheckSymbolForDivision(num) == 1)
 				continue;
 			else if (isNum == false)
 				Console.WriteLine("Введены неверные данные");
-
 		}
 	}
 
