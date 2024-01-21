@@ -25,7 +25,7 @@ namespace project
 			FillArray(array);
 			PrintArray(array);
 			System.Console.WriteLine();
-			System.Console.WriteLine(CriateNumber(array));
+			System.Console.WriteLine(CreateNumber(array));
 		}
 
 		static void FillArray(int[] arr)
@@ -45,7 +45,7 @@ namespace project
 			}
 		}
 
-		static double CriateNumber(int[] arr)
+		static double CreateNumber(int[] arr)
 		{
 			int len = arr.Length - 1;
 			double sum = 0;
