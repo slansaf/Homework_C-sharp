@@ -17,8 +17,8 @@ class Program
 			bool isNum = int.TryParse(symbol, out int num);
 			if (symbol == "q")
 				break;
-            		else if(num == 0)
-                		continue;
+            else if(num == 0)
+               continue;
 			else if (CheckSymbolForDivision(num) == 0)
 				break;
 			else if (CheckSymbolForDivision(num) == 1)
