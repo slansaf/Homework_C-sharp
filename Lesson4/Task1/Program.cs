@@ -23,7 +23,7 @@ class Program
 				break;
 			else if (CheckSymbolForDivision(num) == 1)
 				continue;
-			else if (isNum == false)
+			else if (isNum == true)
 				Console.WriteLine("Введены неверные данные");
 		}
 	}
